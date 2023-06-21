@@ -27,4 +27,13 @@
     padding: 18px 32px;
     font-size: 20px;
   }
+  &.circle {
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    max-height: 57px;
+    max-width: 57px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
 }

@@ -1,6 +1,11 @@
 .listcard {
+  justify-content: flex-start;
+
   display: flex;
   gap: 24px;
   // overflow: hidden;
   flex-wrap: nowrap;
+  max-width: 734px;
+  overflow-x: hidden;
+  padding: 50px 0px 50px 50px;
 }

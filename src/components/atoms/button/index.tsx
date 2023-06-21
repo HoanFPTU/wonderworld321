@@ -4,7 +4,7 @@ import "./index.scss";
 interface ButtonProps {
   href?: string;
   children: React.ReactNode;
-  style: "linear" | "none" | "black";
+  style: "linear" | "none" | "black" | "circle";
 }
 
 const Button: FC<ButtonProps> = ({ href, children, style }) => {

@@ -1,0 +1,22 @@
+.progress {
+  display: flex;
+  align-items: center;
+  &__border {
+    height: 3px;
+    width: 523px;
+    background-color: #808998;
+    .progress_per {
+      background-color: #fff;
+      height: 3px;
+      width: 20%;
+    }
+  }
+  span {
+    font-family: "Archivo Narrow";
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 22px;
+    margin-left: 15px;
+  }
+}

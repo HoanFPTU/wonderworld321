@@ -16,6 +16,15 @@ const Listcard: FC = ({}) => {
       <Card src="/bg3.svg" style="normal">
         các hoạt động tringuda
       </Card>
+      <Card src="/bg4.svg" style="normal">
+        DỰ ÁN BẢO TỒN BIỂN
+      </Card>
+      <Card src="/bg5.svg" style="normal">
+        NHÂN VIÊN TRINGUDA
+      </Card>
+      <Card src="/bg6.svg" style="normal">
+        TRUYỀN THÔNG VỀ TRINGUDA
+      </Card>
     </div>
   );
 };

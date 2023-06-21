@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import "./index.scss";
+import Link from "next/link";
 interface CardProps {
   children?: React.ReactNode;
   style: "large" | "normal";
@@ -10,7 +11,9 @@ const Card: FC<CardProps> = ({ children, style, src }) => {
   return (
     <div className={`card ${style}`}>
       <img src={src} />
-      <p className="card__text">{children}</p>
+      <Link href="./" className="card__text">
+        {children}
+      </Link>
     </div>
   );
 };
