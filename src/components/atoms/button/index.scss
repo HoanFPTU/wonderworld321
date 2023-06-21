@@ -1,0 +1,30 @@
+.button {
+  background-color: red;
+  padding: 15px 25px;
+  border-radius: 99px;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+
+  & {
+    background: linear-gradient(
+      75.82deg,
+      rgba(243, 99, 99, 0) -1.39%,
+      rgba(122, 72, 72, 0.05) 97%
+    );
+    box-shadow: inset 0px 10px 25px rgba(230, 221, 254, 0.33);
+  }
+
+  &.linear {
+    background-image: url("https://s3-alpha-sig.figma.com/img/17dc/4350/4c1ef46063252dcfc7f655143e5dac1c?Expires=1688342400&Signature=egYjwsYbegwOlR3NdYGqiT6SVANpDs9jzdeJrqDF0CQ04-b93konGEQNr~mtGZTLKsg1-QY6Hxbwc9RfSFy2mktUELgHBNOOCKlrUmqU7yGtSOW9jPA-9XFLW5mesxdDds-vktat74hgQdJ1RtWjFhGa~xJ7YAAKYqq3xxxgq~tWEjf-qCAXhNmElDxOXpOK5U0mtUHf2GozVzHt7I9QFBzxBPUiWhcjHKR8X4C1AhjZzYmht23uFjzGlO5CCjUBvImnAbXDdlILNLC7ncBWZBtxLrDlclWS0R2HMtd0-HxSXpGiwb7xO6RIZR22GO8gzoSUPQqvggFn~DvNa0oZgg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+    box-shadow: inset 0px 10px 25px rgba(230, 221, 254, 0.33);
+    color: #000;
+  }
+  &.black {
+    background: black;
+    box-shadow: inset 0px 10px 25px rgba(230, 221, 254, 0.1);
+    padding: 18px 32px;
+    font-size: 20px;
+  }
+}
