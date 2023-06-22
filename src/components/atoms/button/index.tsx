@@ -5,16 +5,21 @@ interface ButtonProps {
   href?: string;
   children: React.ReactNode;
   style: "linear" | "none" | "black" | "circle";
+  onClick?: () => void;
 }
 
-const Button: FC<ButtonProps> = ({ href, children, style }) => {
+const Button: FC<ButtonProps> = ({ href, children, style, onClick }) => {
   if (href)
     return (
-      <Link className={`button ${style}`} href={href}>
+      <Link onClick={onClick} className={`button ${style}`} href={href}>
         {children}
       </Link>
     );
-  return <div className={`button ${style}`}>{children}</div>;
+  return (
+    <div onClick={onClick} className={`button ${style}`}>
+      {children}
+    </div>
+  );
 };
 
 export default Button;

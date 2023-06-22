@@ -4,13 +4,14 @@ import Link from "next/link";
 interface CardProps {
   children?: React.ReactNode;
   style: "large" | "normal";
-  src: string;
+
+  id: string;
 }
 
-const Card: FC<CardProps> = ({ children, style, src }) => {
+const Card: FC<CardProps> = ({ children, style, id }) => {
   return (
     <div className={`card ${style}`}>
-      <img src={src} />
+      <img src={`bg${id}.svg`} />
       <Link href="./" className="card__text">
         {children}
       </Link>

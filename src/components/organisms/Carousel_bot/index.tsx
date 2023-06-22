@@ -4,19 +4,27 @@ import Button from "@/components/atoms/button";
 import Progress from "@/components/atoms/progress";
 import Link from "next/link";
 
-interface CarouselBotProps {}
+interface CarouselBotProps {
+  preSlide: () => void;
+  nextSlide: () => void;
+  currentCard: number;
+}
 
-const CarouselBot: FC<CarouselBotProps> = ({}) => {
+const CarouselBot: FC<CarouselBotProps> = ({
+  preSlide,
+  nextSlide,
+  currentCard,
+}) => {
   return (
     <div className="Carousel_bot">
       <div className="Carousel_bot__top">
-        <Button style="circle">
+        <Button onClick={() => preSlide()} style="circle">
           <img src="./preslide.svg" alt="" />
         </Button>
-        <Button style="circle">
+        <Button onClick={() => nextSlide()} style="circle">
           <img src="./nextslide.svg" alt="" />
         </Button>
-        <Progress></Progress>
+        <Progress currentCard={currentCard}></Progress>
       </div>
       <Link href="./" className="link">
         Khám phá
